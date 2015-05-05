@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" {{#if this.angular_app}}ng-app="{{this.angular_app}}"{{/if}}>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}} | {{siteTitle}}</title>
+
+    {{#is environment "prod"}}
+    <link rel="stylesheet" href="{{assetsDir}}/main.css">
+    {{/is}}
+  </head>
+  <body>
+
+    {% body %}
+
+    <script src="{{assetsDir}}/bundle.js"></script>
+
+  </body>
+</html>

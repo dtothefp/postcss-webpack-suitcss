@@ -1,0 +1,13 @@
+red: &red 'red'
+blue: &blue 'blue'
+yellow: &yellow 'goldenrod'
+
+ui-color:
+  small: *blue
+  medium: *yellow
+  large: *red
+#ui-color:
+  #red: 'var(--smallColor)'
+  #blue: 'var(--mediumColor)'
+  #yellow: 'var(--largeColor)'
+

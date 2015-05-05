@@ -1,0 +1,26 @@
+@import 'suitcss';
+@import './variables.css';
+
+@media (min-width: map(media-queries, small)) {
+  body {
+    background: var(--smallColor);
+    color: map(colors, ui-color, small);
+    font-size: map(sizes, large);
+  }
+}
+
+@media (min-width: map(media-queries, medium)) {
+  body {
+    background: var(--mediumColor);
+    color: map(colors, ui-color, medium);
+    font-size: map(sizes, medium);
+  }
+}
+
+@media (min-width: map(media-queries, large)) {
+  body {
+    background: var(--largeColor);
+    color: map(colors, ui-color, large);
+    font-size: map(sizes, small);
+  }
+}
